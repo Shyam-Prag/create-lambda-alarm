@@ -28,6 +28,5 @@ Lambda function which creates a cloudwatch alarm for a number of functions provi
 }
 ```
 NOTE:
-1. lambda_function.py sreates an alarm for each Lambda function name provided within the metrics list. This can be inserted into as a 'test event' within the AWS Lambda console. 
+1. lambda_function.py creates an alarm for each Lambda function name provided within the metrics list(dimensions_function_name). This can be inserted into as a 'test event' within the AWS Lambda console. 
 2. This function triggeres an SNS topic (insert SNS ARN in line 36) in which you can get email notified whenever your function throws an error. 
-3. append  "dimensions_function_name" with your function name. 
